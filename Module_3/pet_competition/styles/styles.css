@@ -1,0 +1,71 @@
+html {
+    background-color: rgb(255, 194, 188);
+}
+
+header {
+    background: #f08080 url(../images/buttercross-veterinary-centre-fav.png) right / contain no-repeat;
+    text-align: center;
+    padding: 60px;
+    height: 150px;
+}
+
+header h1 {
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+fieldset {
+    margin: 10px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+fieldset#petInfo {
+    background: lightsalmon url(../images/dog-and-cat.jpg) bottom / cover no-repeat;
+}
+
+fieldset#comp {
+    background: url(../images/933116.png) bottom right / contain no-repeat;
+}
+
+fieldset#butt {
+    text-align: center;
+}
+
+legend {
+    background-color: rgb(255, 173, 173);
+}
+
+div {
+    margin: 5px;
+}
+
+div#buttons {
+    width: 100%;
+  }
+
+label {
+    padding: 10px;
+}
+
+textarea {
+    margin: 10px;
+    height: 100px;
+    width: 95%;
+}
+
+input[type="submit"], input[type="reset"] {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 40px;
+}
+
+input#ownerName:focus:valid, input#phone:focus:valid, input#email:focus:valid {
+    background-color: lightgreen;
+}
+
+input#ownerName:focus:invalid, input#phone:focus:invalid, input#email:focus:invalid {
+    background-color: pink;
+}

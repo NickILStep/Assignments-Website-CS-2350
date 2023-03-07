@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pet Competition</title>
+        <link href="styles/rb_reset.css" rel="stylesheet" />
+        <link href="styles/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <h1>Pet Competition</h1>
+        </header>
+        <form id="petForm" action="http://icarus.cs.weber.edu/~linda/cs2350/submit_pet1.php" method="POST">
+            <fieldset id="petInfo">
+                <legend>Tell Us About Your Pet:</legend>
+                <div>
+                    <label for="petName">Name</label>
+                    <input name="pname" id="petName" type="text" placeholder="Pet Name" />
+                    <label for="petBirth">Birthdate</label>
+                    <input name="pbirthday" id="petBirth" type="date" />
+                </div>
+                <div>
+                    <fieldset class="petType">
+                        <label for="cat">Cat</label>
+                        <input name="type" id="typeCat" value="cat" type="radio" />
+                        <br />
+                        <label for="dog">Dog</label>
+                        <input name="type" id="typeDog" value="dog" type="radio" />
+                        <br />
+                        <label for="reptile">Reptile</label>
+                        <input name="type" id="typeReptile" value="reptile" type="radio" />
+                        <br />
+                        <label for="bird">Bird</label>
+                        <input name="type" id="typeBird" value="bird" type="radio" />
+                        <br />
+                        <label for="rodent">Rodent</label>
+                        <input name="type" id="typeRodent" value="rodent" type="radio" />
+                    </fieldset>
+                </div>
+                <div>
+                    <label for="petBio">Pet Bio</label>
+                    <textarea name="biography" id="petBio" placeholder="Enter a bio for your pet here."></textarea>
+                </div>
+            </fieldset>
+            <fieldset id="contactInfo">
+                <legend>Tell Us About Yourself:</legend>
+                <div>
+                    <label for="ownerName">Name*</label>
+                    <input name="oName" id="ownerName" type="text" placeholder="Your Name" required />
+                    <label for="phone">Phone Number*</label>
+                    <input name="custPhone" id="phone" type="tel" placeholder="(xxx) xxx-xxxx" required pattern="^\d{10}$|^(\d3\s*)?\d{3}[\s-]?\d{4}$" />
+                    <label for="email">Email*</label>
+                    <input name="custEmail" id="email" type="email" placeholder="youremail@example.com" required />
+                </div>
+            </fieldset>
+            <fieldset id="comp">
+                <legend>Competition Entry:</legend>
+                <div>
+                    <label>Which Competitions Would You Like To Enter?</label><br /><br />
+                    <input name="compEntry" id="sing" value="sing" type="checkbox" />
+                    <label for="sing">Singing Pet Competition</label>
+                    <input name="compEntry" id="cute" value="cute" type="checkbox" />
+                    <label for="cute">Cutest Pet Competition</label>
+                    <input name="compEntry" id="trick" value="trick" type="checkbox" />
+                    <label for="trick">Pet Tricks Competition</label>
+                </div>
+                <br />
+                <div>
+                    <label for="entryName">Name of Entry</label>
+                    <input name="entName" id="entryName" type="text" placeholder="Entry Name" />
+                </div>
+                <br />
+                <div>
+                    <label>Tricks:</label>
+                    <select name="trickOptions">
+                        <option name="trickOptions" id="obstCrse" value="obstacleCourse">Obstacle Course</option>
+                        <option name="trickOptions" id="catch" value="frsby/ball/catch">Frisbee, Ball, or Other Catch</option>
+                        <option name="trickOptions" id="roll" value="roll/playDead">Roll Over/Play Dead</option>
+                        <option name="trickOptions" id="other" value="other">Other</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset id="boarding">
+                <legend>Boarding:</legend>
+                <div>
+                    <label for="boardDays">How many days of boarding?</label>
+                    <input name="boardingDays" id="boardDays" type="number" min="0" max="3" /><br /><br />
+                    <label for="kennelSize">Size of kennel (inches):</label>
+                    0
+                    <input name="kennel" id="kennelSize" type="range" min="0" max="48" step="8" />
+                    48
+                </div>
+            </fieldset>
+            <fieldset id="butt">
+                <div class="buttons">
+                    <input value="Submit" type="submit" name="submit" />
+                    <input value="Reset" type="reset" />
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
