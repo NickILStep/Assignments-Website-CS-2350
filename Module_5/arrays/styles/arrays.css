@@ -1,0 +1,102 @@
+/*
+
+Author Name: Nicholas Stephenson
+Date: 10/31/2021
+File Name: arrays.css
+
+*/
+
+/* Part 5: add style */
+
+/* html styles */
+html {
+    background-color: lightgray;
+    color: rgb(75, 75, 75);
+}
+
+/* body styles */
+body {
+    text-align: center;
+}
+
+/* header styles */
+h1 {
+    background-color: gray;
+    padding: 0px;
+    margin: 0px;
+    height: 2em;
+    line-height: 2em;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* table styles */
+table, td {
+    border: 1px solid rgb(75, 75, 75);
+}
+
+table {
+    width: 100%;
+    background-color: darkgray;
+    box-shadow: 15px 15px 15px gray;
+}
+
+td, th {
+    height: 2em;
+}
+
+th {
+    text-align: center;
+}
+
+td {
+    background-color: lightgray;
+}
+
+/* list styles */
+li {
+    text-transform: capitalize;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+/* section styles */
+section {
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    border: 1px solid black;
+    text-align: left;
+    padding: 6px;
+    width: 27.5%;
+    height: 700px;
+    background-color: lightgray;
+    box-shadow: 15px 15px 15px gray;
+}
+
+section#sort {
+    width: 45%;
+}
+
+/* div styles */
+div {
+    max-width: 100%;
+}
+
+section#sort > div {
+    height: 10em;
+}
+
+/* footer styles */
+
+footer {
+    height: 6em;
+    line-height: 3em;
+    max-width: 100%;
+}
