@@ -1,0 +1,21 @@
+background image - html
+background position - html
+background size - html
+background repeat - html
+multiple backgrounds on a single element - header h1
+border width, style, and color - img.site_preview
+border radius - img.site_preview
+border image - img.banner
+text shadow - header.h1
+box shadow - img.site_preview
+linear gradient - div.row
+radial gradient - footer
+opacity - img.site_preview
+transform, use at least two of the following - img.site_preview
+	rotate X
+	scale
+	traslate X
+	skew
+perspective - img.site_preview
+filter - img.banner
+image map with two or more areas - figure

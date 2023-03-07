@@ -1,0 +1,185 @@
+@charset "UTF-8";
+
+/*
+Author: Nicholas Stephenson
+*/
+
+@font-face {
+    font-family: Quicksand;
+    src: url(../fonts/quicksand_regular.woff) format('woff'),
+         url(../fonts/quicksand_regular.ttf) format('truetype');
+ }
+
+ html {
+     background: url(../images/programming-coding.jpg) 100% / cover no-repeat fixed;
+     height: 100%;
+ }
+
+/* Header Styles */
+
+header {
+    width: 100%;
+}
+
+header h1 {
+    text-align: center;
+    color: rgb(0, 29, 192);
+    background: url(../images/3704103.png) bottom right / contain no-repeat content-box,
+                url(../images/deer-3248165-2705140.png) bottom left / contain no-repeat content-box,
+                rgb(0, 153, 255);
+    padding-top: .5em;
+    padding-bottom: .5em;
+    font-style: italic;
+    margin: 0em;
+    font-size: 40px;
+    text-shadow:rgb(55, 245, 220) 5px 5px 5px;
+}
+
+header > nav {
+    padding: .5em;
+    background-color: rgb(51, 214, 255);
+    margin: 0em;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline;
+    width: 3em;
+    margin: .5em;
+    padding: 1em 6em;
+    background-color: rgba(17, 0, 255, 0.11);
+}
+
+nav a:link, nav a:visited {
+    text-decoration: none;
+    color:rgb(0, 29, 192);
+}
+
+nav a:hover, nav a:active {
+    text-decoration: underline;
+    color:darkslategray;
+}
+
+nav a.current_page {
+    color: rgb(2, 132, 172);
+    font-weight: bold;
+}
+
+
+/* Body Styles */
+
+body {
+    margin: 0px;
+    font-family: 'Quicksand', Helvetica, sans-serif;
+    color:rgb(0, 99, 192);
+    max-width: 90em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure {
+    text-align: center;
+}
+
+div.bgcol {
+    width: 90em;
+    height: 100vh;
+    position: fixed;
+    background-color: rgb(136, 241, 255);
+    z-index: -1;
+}
+
+img.banner {
+    box-sizing: border-box;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin: 0em;
+    padding: 0em;
+    -webkit-filter: grayscale(0.5);
+    filter: grayscale(0.5);
+    border-style: solid;
+    border-width: 25px;
+    border-image: url(../images/grunge-border-png.png) 100 stretch;
+}
+
+body > h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+body > div.row, body > div.module_num {
+    font-size: 1.25em;
+    width: auto;
+    padding-left: 6em;
+    margin-bottom: 1.5em;
+    line-height: 1.5em;
+    list-style-type: none;
+    font-style: italic;
+}
+
+div.module_num {
+    text-indent: -2em;
+    clear: both;
+}
+
+div.module_num h3 {
+    text-decoration: underline;
+}
+
+a:link, a:visited {
+    color: rgb(0, 99, 192);
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    font-style: normal;
+    color: darkslategray;
+}
+
+article.assignment_desc {
+    text-indent: 1.5em;
+    margin-bottom: 2em;
+    font-style: italic;
+    margin-right: 4em;
+    text-decoration: none;
+    width: 100%;
+}
+
+ol > li {
+    margin-bottom: 2em;
+}
+
+img.site_preview {
+    width: 20em;
+    height: 12em;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    border: 3px solid royalblue;
+    border-radius: 15px;
+    opacity: 85%;
+    box-shadow: rgb(24, 155, 241) 5px 5px 10px;
+    transform: perspective(800px) rotateY(-15deg) translateZ(-20px);
+}
+
+/* Footer Styles */
+
+footer {
+    position: fixed;
+    bottom: 0em;
+    width: 100%;
+    text-align: center;
+    background: radial-gradient(rgb(38, 243, 250), rgb(0, 102, 255));
+    height: 2em;
+    max-width: 90em;
+}
+
+footer::after {
+    clear: both;
+    content: "";
+    display: table;
+}

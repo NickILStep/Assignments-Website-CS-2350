@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/*
+Author: Nicholas Stephenson
+*/
+
+div.row {
+    width: 100%;
+    float: left;
+    background: linear-gradient(270deg, rgb(140, 203, 255), rgb(136, 241, 255) 90%);
+}
+
+div.col1 {
+    width: 60%;
+    float: left;
+    box-sizing: border-box;
+    padding: 5%;
+}
+
+div.col2 {
+    width: 40%;
+    float: left;
+}
