@@ -1,0 +1,308 @@
+/* Main Styles */
+
+html {
+    background: url("../images/scales.jpg"), rgb(96, 104, 114);
+    min-height: 100vh;
+}
+
+
+/* Header Styles*/
+
+nav {
+    background: url("../images/fox.png") right / contain no-repeat, rgb(120, 134, 134);
+    height: 75px;
+    position: fixed;
+    width: 100%;
+    max-width: 1500px;
+    min-width: 1100px;
+}
+
+nav > a {
+    height: 75px;
+    line-height: 75px;
+    width: 6em;
+    margin: 10px;
+    font-size: 150%;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav > a:first-of-type {
+    margin-left: 20px;
+}
+
+nav > a:link, nav > a:visited {
+    color: white;
+}
+
+nav > a:active, nav > a:hover {
+    color: lightgray;
+}
+
+nav > a.current_page {
+    text-decoration: underline;
+}
+
+
+/* Body Styles */
+
+body {
+    background-color: rgb(183, 208, 209);
+    color: rgb(61, 61, 61);
+    max-width: 1500px;
+    min-width: 900px;
+    min-height: 100vh;
+    margin: 0px auto;
+    font-family: 'Brush Scipt MT', Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 30px;
+    text-align: center;
+}
+
+p {
+    font-size: 1.5em;
+    line-height: 150%;
+    padding: 10px 25px;
+}
+
+p.individual_description {
+    font-size: 2em;
+}
+
+p.portfolio {
+    font-size: 2em;
+}
+
+img:not(#fam_photo) {
+    box-sizing: border-box;
+    max-width: 100%;
+    padding: 10px 25px;
+}
+
+img#fam_photo {
+    width: 1420px;
+    margin: 0px auto;
+}
+
+img.individual_portrait {
+    border-style: solid;
+    border-width: 25px;
+    border-image: url(../images/border.png) 200 round;
+}
+
+img#My_Portrait {
+    width: 60%;
+}
+
+iframe {
+    width: 1200px;
+    height: 1200px;
+    margin: 50px;
+}
+
+a.return_link {
+    text-align: center;
+}
+
+a.return_link:link, a.return_link:visited {
+    text-decoration: none;
+    color: rgb(3, 111, 235);
+}
+
+a.return_link:hover, a.return_link:active {
+    text-decoration: underline;
+    color: rgb(0, 81, 173);
+}
+
+table, tr, td, th {
+    border: 1px dotted rgb(110, 174, 247);
+}
+
+table {
+    width: 100%;
+    background-color: rgb(203, 206, 248);
+}
+
+tr {
+    height: 2em;
+    line-height: 2em;
+}
+
+td, th {
+    padding: 3px;
+}
+
+td:first-of-type, tr:first-of-type {
+    background-color: rgb(181, 185, 247);
+    text-align: center;
+}
+
+caption {
+    background-color: rgb(157, 163, 250);
+    height: 2em;
+    line-height: 2em;
+    font-size: 1.3em;
+}
+
+
+/* Form Styles */
+
+fieldset {
+    border: 3px solid rgb(13, 97, 194);
+    background-color: rgb(148, 214, 223);
+    max-width: 60%;
+    min-height: 50px;
+    margin: 25px auto;
+    border-radius: 10px;
+}
+
+fieldset legend {
+    background-color: rgb(26, 132, 252);
+    color: white;
+    padding: 5px;
+    text-align: left;
+}
+
+fieldset#senderInfo {
+    min-height: 100px;
+}
+
+input#name, input#mail {
+    min-width: 75%;
+    margin: 10px;
+}
+
+input#subject {
+    margin-top: 60px;
+    width: 50%;
+    height: 3em;
+}
+
+fieldset.isPos {
+    margin-top: 40px;
+}
+
+fieldset.isPos input {
+    margin: 15px 10px;
+}
+
+textarea {
+    width: 850px;
+    height: 75px;
+    margin: 5px;
+}
+
+div.contRow {
+    text-align: center;
+    height: 100%;
+}
+
+input#sub_button, input#res_button {
+    width: 80px;
+    height: 40px;
+}
+
+input#name:focus:valid, input#mail:focus:valid {
+    background-color: rgb(220, 255, 220);
+}
+
+input#name:focus:invalid, input#mail:focus:invalid {
+    background-color: rgb(255, 232, 233);
+}
+
+
+/* Div Styles */
+
+div.row {
+    background-color: rgb(183, 208, 209);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+div {
+    box-sizing: border-box;
+    display: inline;
+    float: left;
+    width: 50%;
+    padding: 10px;
+    line-height: 100%;
+}
+
+div#div_my_portrait, div#div_resume, div#div_fam_portrait_text, div#families_intro, div#portfolio_link {
+    text-align: center;
+}
+
+div.quarterWidth {width: 25%;}
+div.thirdWidth {width: 33.33%;}
+div.halfWidth {width: 50%;}
+div.twoThirdsWidth {width: 66.67%;}
+div.threeQuartersWidth {width: 75%;}
+div.fullWidth {width: 100%;}
+
+div#Welcome {
+    line-height: 100%;
+}
+
+div#Welcome > p {
+    text-align: justify;
+}
+
+div.clearNav, div.clearFooter {
+    height: 4em;
+    clear: both;
+}
+
+div.hobby {
+    border-top: 2px dashed teal;
+}
+
+div.hobby p {
+    font-size: 1.25em;
+}
+
+div.hobby h1 {
+    text-align: left;
+    text-decoration: underline;
+}
+
+div.individual_header {
+    background-color: rgb(120, 134, 134);
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    max-width: 1500px;
+    min-width: 900px;
+}
+
+div.individual_header h1 {
+    height: 100px;
+    line-height: 100px;
+    margin-top: -10px;
+    color: white;
+}
+
+div.clearHeader {
+    height: 6em;
+    clear: both;
+}
+
+
+/* Footer Styles */
+
+footer {
+    background-color: rgb(120, 134, 134);
+    color: white;
+    height: 3em;
+    line-height: 3em;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    max-width: 1500px;
+    position: fixed;
+}

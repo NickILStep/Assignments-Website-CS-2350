@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>
+            Contact Me
+        </title>
+        <link href="styles/reset.css" rel="stylesheet" />
+        <link href="styles/styles.css" rel="stylesheet" />
+        <link href="images/deer.png" type="image/png" rel="icon" />
+    </head>
+    <body>
+        <nav>
+            <a href="my_index.html">Home</a>
+            <a href="my_resume.html">My Resume</a>
+            <a href="my_portfolio.html">My Portfolio</a>
+            <a href="my_hobbies.html">My Hobbies</a>
+            <a href="my_family.html">My Family</a>
+            <a href="my_about_me.html">About Me</a>
+            <a href="my_contact_me.html" class="current_page">Contact Me</a>
+        </nav>
+        <div class="clearNav"></div>
+
+        <h1>Contact Me</h1>
+        <br />
+
+        <form id="contact_me" action="http://icarus.cs.weber.edu/~linda/cs2350/submit_pet1.php" method="POST">
+            <fieldset id="senderInfo">
+                <legend>Your Information</legend>
+                <div class="contRow">
+                    <label for="name">Name*</label>
+                    <input name="senderName" id="name" type="text" placeholder="First and Last Name" required />
+                </div>
+                <div class="contRow">
+                    <label for="mail">Email*</label>
+                    <input name="senderMail" id="mail" type="email" placeholder="youremail@example.com" required />
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Your Message</legend>
+                <div class="contRow">
+                    <label for="subject">Subject</label>
+                    <input name="contSubject" id="subject" type="text" list="subject_list" />
+                    <datalist id="subject_list">
+                        <option value="Say Hi"></option>
+                        <option value="Website Suggestions"></option>
+                        <option value="No Reason"></option>
+                    </datalist>
+                </div>
+                <div class="contRow">
+                    <label id="isPosLabel">Is Your Message Positive? (if applicable)</label>
+                    <fieldset class="isPos">
+                        <label for="pYes">Yes</label>
+                        <input name="pos" id="pYes" value="yes" type="radio" />
+                        <br />
+                        <label for="pNo">No</label>
+                        <input name="pos" id="pNo" value="no" type="radio" />
+                    </fieldset>
+                </div>
+                <div class="contRow">
+                    <label for="messageBox">What do you want to say?</label>
+                    <textarea name="contBox" id="messageBox"></textarea>
+                </div>
+            </fieldset>
+            <div class="contRow">
+                <input value="Submit" name="submit" type="submit" id="sub_button" />
+                <input value="Reset" name="reset" type="reset" id="res_button" />
+            </div>
+        </form>
+
+        <div class="clearFooter"></div>
+        <footer>
+            &copy; 2021, Nicholas Stephenson. All rights reserved.
+        </footer>
+    </body>
+</html>
