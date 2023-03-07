@@ -1,0 +1,26 @@
+table.schedule {
+    width: 100%;
+    border: 15px outset rgb(151, 151, 151);
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    width: 12.5%;
+    padding: 5px;
+}
+
+th {
+    background-color: bisque;
+    color: brown;
+}
+
+td {
+    background-color: rgb(255, 248, 232);
+    color: brown;
+}
+
+caption {
+    caption-side: bottom;
+    text-align: right;
+}
